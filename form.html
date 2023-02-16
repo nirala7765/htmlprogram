@@ -2,18 +2,38 @@
 <html lang="en">
 <head>
     
+    
     <title>Enquiry Form</title>
+    <style>
+        body {background-color: rgba(33, 152, 101, 0.419);}
+        sup {color: red;}
+        p {background-color: rgb(209, 204, 129); }
+        p {color: rgb(238, 18, 18);}
+        legend{
+            color: rgb(255, 0, 0);
+        }
+        fieldset{
+            color: rgb(34, 6, 98);
+            
+        }
+        
+    </style>
+
+
+
 </head>
 <body>
     <form >
-        <fieldset>
+        <fieldset >
             <legend><h2>Enquiry</h2></legend>
-            First Nmae : <input type="text" name = "1stname" placeholder="Enter First Name" autofocus="" required = "">
-            Midle Name : <input type="text" name="midname" placeholder="Enter Midle Name" autofocus="" required = "">
-            Last Name  : <input type="text" name="lname"placeholder="Enter Last Name"  required="">
+            <p > <b>Note : All Fields Are Mindatery Which are marked by(*)</b></p>
+            <br>
+            First Nmae<sup>*</sup> : <input type="text" name = "1stname" placeholder="Enter First Name" autofocus="" required = "">
+            Midle Name<sup>*</sup> : <input type="text" name="midname" placeholder="Enter Midle Name" autofocus="" required = "">
+            Last Name<sup>*</sup>  : <input type="text" name="lname"placeholder="Enter Last Name"  required="">
             <br>
             <br>
-            Gender : <input type="radio" value="gender" name="gen" required="" >
+            Gender<sup>*</sup> : <input type="radio" value="gender" name="gen" required="" >
             <label >Male</label>
             <input type="radio" value="gender" name="gen">
             <label >Femaile </label>
@@ -21,16 +41,16 @@
             <label>Other</label>
             <br>
             <br>
-            Date of Birth : <input type="Date" id = "dob" name = "dob" required="">
+            Date of Birth<sup>*</sup> : <input type="Date" id = "dob" name = "dob" required="">
             <br>
             <br>
-            Photo : <input type="file" name="image" required="">
+            Photo : <input type="file" name="image" >
             <br>
             <br>
-            Session : <input type="month" required="">
+            Session<sup>*</sup> : <input type="month" required="">
             <br>
             <br>
-            prefered language : <input type="CheckBox" name="en" required="">
+            prefered language<sup>*</sup> : <input type="CheckBox" name="en" required="">
             <label >English</label>
             <input type="checkBox" name="hin">
             <label >Hindi</label>
@@ -38,13 +58,13 @@
             <label >Tamil</label>
             <br>
             <br>
-            Mobile number : <input type="number" name="mob" placeholder="Enter your Mobile " required="" >
+            Mobile number<sup>*</sup> : <input type="number" name="mob" placeholder="Enter your Mobile " required="" >
             <br>
             <br>
-            Email          : <input type="email" name ="email" placeholder="Enter your Email" required="">
+            Email<sup>*</sup>          : <input type="email" name ="email" placeholder="Enter your Email" required="">
             <br>
             <br> 
-            Select State : <select name="state" id="233" required="">
+            Select State<sup>*</sup> : <select name="state" id="233" required="">
                 <option value="select">Please Select Your State </option>
                 <option value="ass">Assam</option>
                 <option value="Arunachal Pradesh">Arunachal Pradesh</option>
@@ -56,7 +76,7 @@
             </select>
             <br>
             <br>
-            Select Course : <select name="select corse" id="25" required="">
+            Select Course<sup>*</sup> : <select name="select corse" id="25" required="">
             <option value="select">Select a Course</option>   
             <optgroup label="Degree Course"> 
             <option value="b.commerce">Bachelor In Commerce</option>
@@ -84,11 +104,11 @@
             </select>
             <br>
             <br>
-            Address : <textarea name="add" id="25" cols="170" rows="7" placeholder="Enter Your Address Here" required="" maxlength="500"></textarea>
+            Address<sup>*</sup> : <textarea name="add" id="25" cols="170" rows="7" placeholder="Enter Your Address Here" required="" maxlength="500"></textarea>
             <br>
             <br>
 
-            Query : <textarea name="quiry" id="25" cols="170" rows="5" placeholder="Enter Your Query Here" required="" minlength="100" maxlength="10000"></textarea>
+            Query<sup>*</sup> : <textarea name="quiry" id="25" cols="170" rows="5" placeholder="Enter Your Query Here" required="" minlength="100" maxlength="10000"></textarea>
             <br>
             <br>
            <input type="submit" value="SUBMIT" name="sub" >
